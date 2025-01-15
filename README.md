@@ -10,9 +10,9 @@
 
 **界面效果：**  
 
-![Snipaste_2025-01-12_19-27-37](.\img\Snipaste_2025-01-12_19-27-37.png)
+![Snipaste_2025-01-12_19-27-37](./img/Snipaste_2025-01-12_19-27-37.png)
 
-![Snipaste_2025-01-12_19-28-18](.\img\Snipaste_2025-01-12_19-28-18.png)
+![Snipaste_2025-01-12_19-28-18](./img/Snipaste_2025-01-12_19-28-18.png)
 
 **All Created By Cursor！**
 
