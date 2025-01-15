@@ -7,7 +7,7 @@
 <body>
     <div class="input-container">
         <input type="time" id="timeInput" required>
-        <button onclick="setCustomTime()">确定</button>
+        <button onclick="setCustomTime()">Confirm</button>
     </div>
 
     <div class="clock">
@@ -16,7 +16,7 @@
         <div class="hand hour" id="hour"></div>
         <div class="hand minute" id="minute"></div>
         <div class="hand second" id="second"></div>
-        <!-- Adjusted number positions -->
+        <!-- Existing number positions -->
         <div class="number" style="transform: rotate(0deg)"><span style="transform: rotate(0deg)">12</span></div>
         <div class="number" style="transform: rotate(30deg)"><span style="transform: rotate(-30deg)">1</span></div>
         <div class="number" style="transform: rotate(60deg)"><span style="transform: rotate(-60deg)">2</span></div>
@@ -30,6 +30,9 @@
         <div class="number" style="transform: rotate(300deg)"><span style="transform: rotate(-300deg)">10</span></div>
         <div class="number" style="transform: rotate(330deg)"><span style="transform: rotate(-330deg)">11</span></div>
     </div>
+
+    <div class="message">✨ Watch the magic in 60 seconds ✨</div>
+
     <script src="js/clock.js"></script>
 </body>
 </html>

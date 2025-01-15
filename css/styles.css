@@ -1,3 +1,4 @@
+/* Update body styles to accommodate new message */
 body {
     display: flex;
     flex-direction: column;
@@ -7,6 +8,27 @@ body {
     margin: 0;
     padding: 20px;
     font-family: Arial, sans-serif;
+    gap: 20px;  /* Add spacing between elements */
+}
+
+/* Add to your existing CSS */
+.message {
+    margin-top: 20px;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: #f5f5f5;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
 }
 
 .input-container {
@@ -61,6 +83,9 @@ button:active {
     background: white;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
     transition: background-color 0.5s ease; /* Smooth transition for background color */
+    will-change: background-color;
+    transform: translateZ(0); /*Enable hardware acceleration */
+    -webkit-font-smoothing: antialiased;
 }
 
 /* 小时刻度 */
@@ -110,7 +135,7 @@ button:active {
     position: absolute;
     width: 1px;
     height: 8px;
-    background: #999; /* Ensure minute marks are always visible */
+    background: #7b7979; /* Ensure minute marks are always visible */
     left: 50%;
     top: 5px;
     transform-origin: 50% 145px;
@@ -141,6 +166,7 @@ button:active {
     transform-origin: bottom;
     transition: transform 0.1s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     z-index: 2;
+    will-change: transform; /* Optimize for animations */
 }
 
 .hour {
